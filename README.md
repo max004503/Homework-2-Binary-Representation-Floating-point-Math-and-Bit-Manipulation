@@ -12,15 +12,15 @@ The goal is to figure out if adding the loop counter will eventually stop changi
 If overflow is possible, the program prints a warning and shows the smallest value where the increment no longer affects the number.
 
 How to Build
-- Compile the program using g++: g++ -std=c++17 -Wall -Wextra -o fp_overflow_checker fp_overflow_checker.cpp
+- Compile the program using g++: g++ -std=c++17 -Wall -Wextra -o fp_checker fp_overflow_checker.cpp
 
 How to Run
-- Run the program with two floating-point values: ./fp_overflow_checker <loop_bound> <loop_counter>
+- Run the program with two floating-point values: ./fp_checker <loop_bound> <loop_counter>
 
 Example runs:
-./fp_overflow_checker 1e+08 1.0
-./fp_overflow_checker 1e+05 2.0
-./fp_overflow_checker 1.4567 3.14
+./fp_checker 1e+08 1.0
+./fp_checker 1e+05 2.0
+./fp_checker 1.4567 3.14
 
 What the Program Does
 Prints the IEEE 754 bit representation of both inputs, Checks if precision overflow can happen.
